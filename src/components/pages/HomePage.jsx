@@ -6,7 +6,6 @@ import OurWork from './Ourwork'
 import FuturePlans from './FuturePlans'
 import WhoCanSupportUs from './WhoCanSupportUs'
 import Fund from './Fund'
-import Contact from '../common/Contact'
 import Conclusion from './Conclusion'
 
 const HomePage = () => {
@@ -19,7 +18,6 @@ const HomePage = () => {
         <FuturePlans />
         <WhoCanSupportUs />
         <Fund />
-        <Contact />
         <Conclusion />
     </div>
   )
