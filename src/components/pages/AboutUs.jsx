@@ -1,5 +1,4 @@
 import React from 'react';
-import Contact from '../common/Contact';
 import OurWork from './Ourwork';
 
 const AboutUs = () => {
@@ -75,7 +74,6 @@ const AboutUs = () => {
         </div>
       </div>
       <OurWork/>
-      <Contact/>
     </section>
   );
 };
