@@ -6,29 +6,30 @@ const Contact = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          toast.success('Message sent successfully!');
-          form.current.reset();
-          setLoading(false);
-        },
-        (error) => {
-          console.error('EmailJS Error:', error);
-          toast.error('Failed to send message. Please try again.');
-          setLoading(false);
-        }
-      );
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceID || !templateID || !publicKey) {
+      toast.error('EmailJS configuration missing. Check environment variables.');
+      setLoading(false);
+      return;
+    }
+
+    try {
+      await emailjs.sendForm(serviceID, templateID, form.current, publicKey);
+      toast.success('Message sent successfully!');
+      form.current.reset();
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast.error('Failed to send message. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -39,9 +40,11 @@ const Contact = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Form */}
           <form
             ref={form}
             onSubmit={sendEmail}
+            action="#"
             className="bg-white p-8 rounded-lg shadow-md space-y-6"
           >
             <div>
@@ -114,11 +117,15 @@ const Contact = () => {
             </button>
           </form>
 
-         {/* Contact Info & Map */}
+          {/* Contact Info & Map */}
           <div className="space-y-6">
             <div className="bg-purple-50 p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-purple-800 mb-4">📍 Address</h3>
-              <p>Vinaywings Navjeevan Foundation<br />Sector 34, Noida, Uttar Pradesh, India</p>
+              <p>
+                Vinaywings Navjeevan Foundation
+                <br />
+                Sector 34, Noida, Uttar Pradesh, India
+              </p>
             </div>
 
             <div className="bg-purple-50 p-6 rounded-lg shadow">
