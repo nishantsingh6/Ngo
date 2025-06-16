@@ -73,7 +73,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <OurWork/>
+     <div className='mt-10'>
+       <OurWork/>
+     </div>
     </section>
   );
 };
