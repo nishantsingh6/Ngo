@@ -8,14 +8,15 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Logo and Foundation Name */}
-        <div className="flex items-center space-x-3">
-          <img
-            src={logo}
-            alt="Vinaywings Navjeevan Foundation Logo"
-            className="w-20 h-20 rounded-full object-cover"
-          />
-          <span className="text-xl font-bold tracking-wide">Vinaywings Navjeevan Foundation</span>
-        </div>
+       <div className="flex items-center space-x-3">
+  <img
+    src={logo}
+    alt="Vinaywings Navjeevan Foundation Logo"
+    className="w-20 h-20 rounded-full object-cover bg-white p-1 shadow-lg"
+  />
+  <span className="text-xl font-bold tracking-wide">Vinaywings Navjeevan Foundation</span>
+</div>
+
 
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-6 text-sm md:text-base">

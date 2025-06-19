@@ -6,6 +6,12 @@ import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = () => {
+    setIsOpen(false);
+    window.scrollTo(0, 0);
+  };
+
   const navLinkClass = ({ isActive }) =>
     isActive
       ? "text-purple-700 font-semibold border-b-2 border-purple-700 pb-1 transition"
@@ -22,11 +28,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <NavLink
-              to="/"
-              className="text-2xl font-extrabold text-purple-700 tracking-wide select-none"
-              onClick={() => setIsOpen(false)}
-            >
+            <NavLink to="/" onClick={handleNavClick}>
               <img
                 src={logo}
                 alt="Logo"
@@ -37,22 +39,22 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-10 items-center">
-             <NavLink to="/" className={navLinkClass}>
+            <NavLink to="/" className={navLinkClass} onClick={handleNavClick}>
               Home
             </NavLink>
-            <NavLink to="/about" className={navLinkClass}>
+            <NavLink to="/about" className={navLinkClass} onClick={handleNavClick}>
               About us
             </NavLink>
-            <NavLink to="/events" className={navLinkClass}>
+            <NavLink to="/events" className={navLinkClass} onClick={handleNavClick}>
               Events
             </NavLink>
-            <NavLink to="/team" className={navLinkClass}>
+            <NavLink to="/team" className={navLinkClass} onClick={handleNavClick}>
               Our Team
             </NavLink>
-            <NavLink to="/contact" className={navLinkClass}>
+            <NavLink to="/contact" className={navLinkClass} onClick={handleNavClick}>
               Contact
             </NavLink>
-            <NavLink to="/gallery" className={navLinkClass}>
+            <NavLink to="/gallery" className={navLinkClass} onClick={handleNavClick}>
               Gallery
             </NavLink>
           </div>
@@ -91,7 +93,7 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Home
             </NavLink>
@@ -102,7 +104,7 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               About us
             </NavLink>
@@ -113,7 +115,7 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Events
             </NavLink>
@@ -124,7 +126,7 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Our Team
             </NavLink>
@@ -135,7 +137,7 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Contact
             </NavLink>
@@ -146,11 +148,10 @@ const Navbar = () => {
                   ? "block text-purple-800 font-semibold border-l-4 border-purple-700 pl-3"
                   : "block text-purple-600 hover:text-purple-800 hover:border-l-4 hover:border-purple-700 pl-3 transition"
               }
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Gallery
             </NavLink>
-            
           </motion.div>
         )}
       </AnimatePresence>
