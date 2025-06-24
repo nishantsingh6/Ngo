@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import vend from '../../assets/vendingM.jpg';
+import vend from '../../assets/IMG-20250614-WA0009.jpg'
 import study from '../../assets/studyPoint.jpg';
 import comp from '../../assets/labImg.jpg';
 
@@ -40,15 +40,15 @@ const FuturePlans = () => {
             <h3 className="text-xl font-semibold text-purple-800 mb-3">🩸 Sanitary Pad Vending Machine</h3>
             <p className="text-md font-medium text-gray-700">
               {expandedText.vendingMachine
-                ? "We plan to install sanitary pad vending machines in women's toilets at railway stations, metro points, villages, and slum localities. These machines will provide sanitary pads at little to no cost, ensuring women have a reliable option during their menstrual cycle and eliminating the need for unsafe substitutes."
+                ? "We plan to install sanitary pad vending machines in women's toilets at railway stations, metro points, villages, and slum localities. These machines will provide sanitary pads at little to no cost, ensuring women have a reliable option during their menstrual cycle and eliminating the need for unsafe substitutes. "
                 : "We plan to install sanitary pad vending machines in women's toilets at railway stations..."}
-            </p>
-            <span
+                <span
               className="text-purple-700 cursor-pointer mt-2 font-medium hover:underline"
               onClick={() => toggleText('vendingMachine')}
             >
               {expandedText.vendingMachine ? "Show Less" : "Show More"}
             </span>
+            </p>
           </div>
 
           {/* Expanding Study Points */}
@@ -63,15 +63,15 @@ const FuturePlans = () => {
             <h3 className="text-xl font-semibold text-purple-800 mb-3">📚 Expanding Study Points</h3>
             <p className="text-md font-medium text-gray-700">
               {expandedText.studyPoints
-                ? "We will expand our study points to educate as many students as possible, bringing education closer to home and eliminating barriers like distance for underprivileged children."
+                ? "We will expand our study points to educate as many students as possible, bringing education closer to home and eliminating barriers like distance for underprivileged children. "
                 : "We will expand our study points to educate as many students as possible..."}
-            </p>
-            <span
+                <span
               className="text-purple-700 cursor-pointer mt-2 font-medium hover:underline"
               onClick={() => toggleText('studyPoints')}
             >
               {expandedText.studyPoints ? "Show Less" : "Show More"}
             </span>
+            </p>
           </div>
 
           {/* Computer Lab */}
@@ -86,15 +86,15 @@ const FuturePlans = () => {
             <h3 className="text-xl font-semibold text-purple-800 mb-3">💻 Computer Lab</h3>
             <p className="text-md font-medium text-gray-700">
               {expandedText.computerLab
-                ? "We will establish a dedicated computer lab for below poverty line students, allowing them to harness the power of the internet and social media to showcase their talents and explore a wide range of career opportunities."
+                ? "We will establish a dedicated computer lab for below poverty line students, allowing them to harness the power of the internet and social media to showcase their talents and explore a wide range of career opportunities. "
                 : "We will establish a dedicated computer lab for below poverty line students..."}
-            </p>
-            <span
+                <span
               className="text-purple-700 cursor-pointer mt-2 font-medium hover:underline"
               onClick={() => toggleText('computerLab')}
             >
               {expandedText.computerLab ? "Show Less" : "Show More"}
             </span>
+            </p>
           </div>
         </div>
       </div>

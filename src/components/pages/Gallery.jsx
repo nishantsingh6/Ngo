@@ -7,6 +7,25 @@ import img5 from '../../assets/tech.png';
 import img6 from '../../assets/welcomeImg.jpg';
 import img7 from '../../assets/visit.jpg';
 import img8 from '../../assets/paddis.png';
+import img9 from '../../assets/IMG-20250614-WA0003.jpg'
+import img10 from '../../assets/IMG-20250614-WA0022.jpg'
+import img11 from '../../assets/IMG-20250614-WA0008.jpg'
+import img12 from '../../assets/IMG-20250614-WA0009.jpg'
+import img13 from '../../assets/IMG-20250614-WA0010.jpg'
+import img14 from '../../assets/IMG-20250614-WA0011.jpg'
+import img15 from '../../assets/IMG-20250614-WA0012.jpg'
+import img16 from '../../assets/IMG-20250614-WA0013.jpg'
+import img17 from '../../assets/IMG-20250614-WA0014.jpg'
+import img18 from '../../assets/IMG-20250614-WA0015.jpg'
+import img19 from '../../assets/IMG-20250614-WA0016.jpg'
+import img20 from '../../assets/IMG-20250614-WA0017.jpg'
+import img21 from '../../assets/IMG-20250614-WA0018.jpg'
+import img22 from '../../assets/IMG-20250614-WA0019.jpg'
+import img23 from '../../assets/IMG-20250614-WA0020.jpg'
+import img24 from '../../assets/IMG-20250614-WA0021.jpg'
+
+
+
 
 const images = [
   { src: img, alt: 'Image 1' },
@@ -17,6 +36,22 @@ const images = [
   { src: img6, alt: 'Image 6' },
   { src: img7, alt: 'Image 7' },
   { src: img8, alt: 'Image 8' },
+  { src: img9, alt: 'Image 9' },
+  { src: img10, alt: 'Image 10' },
+  { src: img11, alt: 'Image 11' },
+  { src: img12, alt: 'Image 12' },
+  { src: img13, alt: 'Image 13' },
+  { src: img14, alt: 'Image 14' },
+  { src: img15, alt: 'Image 15' },
+  { src: img16, alt: 'Image 16' },
+  { src: img17, alt: 'Image 17' },
+  { src: img18, alt: 'Image 18' },
+  { src: img19, alt: 'Image 19' },
+  { src: img20, alt: 'Image 20' },
+  { src: img21, alt: 'Image 21' },
+  { src: img22, alt: 'Image 22' },
+  { src: img23, alt: 'Image 23' },
+  { src: img24, alt: 'Image 24' }
 ];
 
 const Gallery = () => {

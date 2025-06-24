@@ -49,7 +49,7 @@ const Introduction = () => {
         {/* Focus Areas */}
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
-            <h3 className="text-2xl font-semibold text-purple-800 mb-3">📘 Education Access</h3>
+            <h3 className="text-2xl font-semibold text-purple-800 mb-3">📘 Education </h3>
             <p>Providing free computers and essential education to underprivileged students.</p>
           </div>
 
