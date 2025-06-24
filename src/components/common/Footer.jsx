@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -36,17 +36,17 @@ const Footer = () => {
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-6 mt-6">
-        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://facebook.com/61573726618551" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="text-white hover:text-orange-400 transition text-2xl" />
         </a>
         <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="text-white hover:text-orange-400 transition text-2xl" />
         </a>
-        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/vwnj_foundation" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-white hover:text-orange-400 transition text-2xl" />
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-white hover:text-orange-400 transition text-2xl" />
+        <a href="https://www.youtube.com/@VinayWingsNavjeevanFoundation" target="_blank" rel="noopener noreferrer">
+          <FaYoutube className="text-white hover:text-orange-400 transition text-2xl" />
         </a>
       </div>
     </footer>
