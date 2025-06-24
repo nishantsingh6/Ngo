@@ -3,18 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
+import Installation from '../../assets/IMG-20250614-WA0012.jpg'
+import Sec37 from '../../assets/IMG-20250614-WA0018.jpg'
 
 const eventsData = [
   {
-    title: "Noida Media Club Program",
-    description: "In December 2024, we organized a program at Noida Media Club where children participated in singing and dancing. Women engaged in discussions, shared their experiences, and voiced their concerns. The event concluded with the distribution of gifts to both children and women.",
-    image: "/images/event1.jpg",
+    title: "Installation of vending machine at District Court in Rewari",
+    description: "We installed a sanitary pad vending machine at the District Court in Rewari to ensure women visiting or working there have easy access to menstrual hygiene products. This initiative supports women’s health and aims to raise awareness about the importance of menstrual hygiene in public spaces.",
+    image:Installation,
   },
-  {
-    title: "Menstrual Hygiene Awareness at the Library",
-    description: "In February 2025, we organized a program with the girls at the library where we discussed menstrual hygiene, common problems, and the importance of openly talking about this topic. Along with this, we also provided basic knowledge about periods to the boys. The session concluded with the distribution of sanitary pads to everyone, and participants shared their experiences.",
-    image: "/images/event2.jpg",
-  },
+ {
+  title: "Installation of vending machine at Sector 37",
+  description: "On 7 June 2025, we installed a sanitary pad vending machine at Sector 37. To mark the occasion, we organized a program at the local library with girls, discussing menstrual hygiene, common challenges, and the importance of open conversations. Boys were also educated about basic menstrual knowledge. The session concluded with the distribution of sanitary pads, and participants shared their experiences.",
+  image: Sec37,
+},
   {
     title: "Monthly Gift Distribution",
     description: "Every month, we distribute gifts to women to encourage and inspire them, making them feel valued and motivated.",
