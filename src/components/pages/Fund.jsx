@@ -51,7 +51,7 @@ const Fund = () => {
 
           {/* Vending Machines */}
           <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-purple-800 mb-3">🩸 Vending Machine Installations</h3>
+            <h3 className="text-xl font-semibold text-purple-800 mb-3">🤖 Vending Machine Installations</h3>
             <p className="text-md text-gray-700 font-medium">
               We plan to install low-cost sanitary pad vending machines in public areas like stations and slums. Your donations make this innovation possible.
             </p>

@@ -37,7 +37,7 @@ const FuturePlans = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-semibold text-purple-800 mb-3">🩸 Sanitary Pad Vending Machine</h3>
+            <h3 className="text-xl font-semibold text-purple-800 mb-3">🤖 Sanitary Pad Vending Machine</h3>
             <p className="text-md font-medium text-gray-700">
               {expandedText.vendingMachine
                 ? "We plan to install sanitary pad vending machines in women's toilets at railway stations, metro points, villages, and slum localities. These machines will provide sanitary pads at little to no cost, ensuring women have a reliable option during their menstrual cycle and eliminating the need for unsafe substitutes. "
