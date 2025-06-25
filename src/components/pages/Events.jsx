@@ -5,6 +5,12 @@ import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
 import Installation from '../../assets/IMG-20250614-WA0012.jpg'
 import Sec37 from '../../assets/IMG-20250614-WA0018.jpg'
+import drawing from '../../assets/drawing.png'; 
+import exercise from '../../assets/exercise.png';
+import holik from '../../assets/holi.jpg';
+import wDay from '../../assets/wDay.png';
+import wHoli from '../../assets/womenHoli.png';
+import giftDis from '../../assets/giftDis.png'
 
 const eventsData = [
   {
@@ -20,32 +26,32 @@ const eventsData = [
   {
     title: "Monthly Gift Distribution",
     description: "Every month, we distribute gifts to women to encourage and inspire them, making them feel valued and motivated.",
-    image: "/images/event3.jpg",
+    image: giftDis,
   },
   {
     title: "Women's Day Celebration",
     description: "On March 8th, we celebrated Women’s Day with great enthusiasm. We played several engaging games, discussed important concerns affecting women, and distributed sanitary pads. The event was filled with positivity, empowerment, and meaningful conversations that inspired everyone present.",
-    image: "/images/event4.jpg",
+    image: wDay,
   },
   {
     title: "Exercise Program",
     description: "Twice a week, we conduct an exercise program where we not only encourage participants to stay active but also educate them about the importance of exercise, highlighting its benefits and potential drawbacks.",
-    image: "/images/event5.jpg",
+    image: exercise,
   },
   {
     title: "Painting & Drawing Classes",
     description: "Twice a month, we organize painting and drawing classes for children, providing them with a creative outlet to express their imagination and develop their artistic skills.",
-    image: "/images/event6.jpg",
+    image: drawing,
   },
   {
     title: "Holi Celebration with the Women",
     description: "On March 13th, we joyfully celebrated Holi with the women, where we provided refreshments, enjoyed vibrant sessions of dancing, and singing. The event was filled with colors, laughter, and moments of togetherness.",
-    image: "/images/event7.jpg",
+    image: wHoli,
   },
   {
     title: "Holi Celebration with the Kids",
     description: "On March 13th, we joyfully celebrated Holi, where we provided refreshments, played fun games, and enjoyed lively sessions of dancing and singing. The event was filled with colors, laughter, and unforgettable memories for everyone.",
-    image: "/images/event8.jpg",
+    image: holik,
   },
 ];
 
