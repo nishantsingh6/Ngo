@@ -34,7 +34,7 @@ const OurWork = () => {
             </div>
             <h3 className="text-2xl font-semibold text-white mb-3">💻 Computer Lab</h3>
             <p className="text-lg text-white">
-              Providing essential computer, internet, and social media training to students, equipping them with the tools they need to succeed in the digital world.
+              Providing essential computer, internet knowledge, and social media training to students, equipping them with the tools they need to succeed in the digital world.
             </p>
           </div>
 

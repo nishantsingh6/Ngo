@@ -8,11 +8,13 @@ import visit from '../../assets/visit.jpg';
 import teching from '../../assets/teaching.jpg';
 import student from '../../assets/student.jpg';
 import holi from '../../assets/holi.jpg';
+import gift from '../../assets/headerImg.jpg';
 import logo from '../../assets/logo.png';
 
 const images = [
   img,
   visit,
+  gift,
   teching,
   student,
   holi

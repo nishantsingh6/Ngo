@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from '../../assets/holi.jpg';
 import img2 from '../../assets/student.jpg';
 import img3 from '../../assets/students.jpg';
@@ -23,6 +23,15 @@ import img21 from '../../assets/IMG-20250614-WA0018.jpg'
 import img22 from '../../assets/IMG-20250614-WA0019.jpg'
 import img23 from '../../assets/IMG-20250614-WA0020.jpg'
 import img24 from '../../assets/IMG-20250614-WA0021.jpg'
+import img25 from '../../assets/newsp1.jpg';
+import img26 from '../../assets/newsp2.jpg';
+import img27 from '../../assets/newsp3.jpg';
+import img28 from '../../assets/newsp4.jpg';
+import img29 from '../../assets/newsp5.jpg';
+import img30 from '../../assets/newsp6.jpg';
+import img31 from '../../assets/newsp7.jpg';
+import img32 from '../../assets/newsp8.jpg';
+import img33 from '../../assets/newsp9.jpg';
 
 
 
@@ -51,10 +60,29 @@ const images = [
   { src: img21, alt: 'Image 21' },
   { src: img22, alt: 'Image 22' },
   { src: img23, alt: 'Image 23' },
-  { src: img24, alt: 'Image 24' }
+  { src: img24, alt: 'Image 24' },
+  { src: img25, alt: 'Image 23' },
+  { src: img26, alt: 'Image 23' },
+  { src: img27, alt: 'Image 23' },
+  { src: img28, alt: 'Image 23' },
+  { src: img29, alt: 'Image 23' },
+  { src: img30, alt: 'Image 23' },
+  { src: img31, alt: 'Image 23' },
+  { src: img32, alt: 'Image 23' },
+  { src: img33, alt: 'Image 23' }
 ];
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="py-16 px-6 md:px-20 bg-gray-100 text-gray-900">
       <div className="max-w-7xl mx-auto">
@@ -69,18 +97,37 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105"
+                className="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
+                onClick={() => handleClick(image)}
               />
-              {/* Hover effect
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                <span className="text-white text-xl font-semibold">View Image</span>
-              </div> */}
             </div>
           ))}
         </div>
       </div>
+
+      {/* Fullscreen Image Modal */}
+    {selectedImage && (
+  <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
+    <div className="relative">
+      <button
+        onClick={closeModal}
+        className="absolute -top-1 -right-1 md:-top-4 md:-right-4 bg-white bg-opacity-80 text-black text-sm md:text-base rounded-full p-1.5 md:p-2 shadow hover:bg-red-100 transition"
+        aria-label="Close"
+      >
+        ❌
+      </button>
+      <img
+        src={selectedImage.src}
+        alt={selectedImage.alt}
+        className="max-w-[90vw] max-h-[80vh] object-contain rounded-lg shadow-2xl"
+      />
+    </div>
+  </div>
+)}
+
     </section>
   );
 };
 
 export default Gallery;
+

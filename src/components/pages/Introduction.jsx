@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutV from '../../assets/aboutVideo.mp4'
 
 const Introduction = () => {
   return (
@@ -12,7 +13,7 @@ const Introduction = () => {
           {/* Left: Text Content */}
           <div className="md:w-2/3 text-lg leading-relaxed">
             <p className="mb-5">
-              <strong className="text-purple-900">Vinaywings Navjeevan Foundation</strong>, founded by <strong className="text-purple-900">Nitu Yadav</strong>, is on a mission to empower women and uplift economically disadvantaged students by providing free computers and essential education.
+              <strong className="text-purple-900">Vinaywings Navjeevan Foundation</strong>, founded by <strong className="text-purple-900">Nitu Yadav</strong>, is on a mission to empower women and uplift economically disadvantaged students by providing free computer knowledge and essential education.
             </p>
             <p className="mb-5">
               Our commitment extends beyond education—into the critical realm of health and hygiene. Through our <strong className="text-purple-900">Feelwow</strong> brand, we distribute free sanitary pads to raise awareness about menstrual health among illiterate women living below the poverty line.
@@ -32,16 +33,16 @@ const Introduction = () => {
             <p className="mt-4 font-medium text-purple-700">Founder – Nitu Yadav</p>
           </div> */}
           <div className="md:w-1/3 text-center">
-            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
-              <iframe
-                src="https://www.youtube.com/embed/enuUviVcH9A"
-                title="Nitu Yadav - Introduction"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              ></iframe>
-            </div>
+           <div className="w-full relative pt-[56.25%] overflow-hidden rounded-lg shadow-lg">
+  <video
+    src={aboutV}
+    controls
+    className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+    title="Nitu Yadav - Introduction"
+  />
+</div>
+
+
             <p className="mt-4 font-medium text-purple-800">Founder – Nitu Yadav</p>
           </div>
         </div>
@@ -50,7 +51,7 @@ const Introduction = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
             <h3 className="text-2xl font-semibold text-purple-800 mb-3">📘 Education </h3>
-            <p>Providing free computers and essential education to underprivileged students.</p>
+            <p>Providing free computer knowledge and essential education to underprivileged students.</p>
           </div>
 
           <div className="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
