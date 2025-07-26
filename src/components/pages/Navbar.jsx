@@ -52,7 +52,7 @@ const Navbar = () => {
               Our Team
             </NavLink>
             <NavLink to="/contact" className={navLinkClass} onClick={handleNavClick}>
-              Contact
+              Contact us
             </NavLink>
             <NavLink to="/gallery" className={navLinkClass} onClick={handleNavClick}>
               Gallery
@@ -139,7 +139,7 @@ const Navbar = () => {
               }
               onClick={handleNavClick}
             >
-              Contact
+              Contact us
             </NavLink>
             <NavLink
               to="/gallery"

@@ -9,27 +9,48 @@ const teamMembers = [
     name: 'Nitu Yadav',
     role: 'Founder & Director',
     image: '/images/nitu-yadav.jpg',
-    description: 'Leads the foundation with a vision to empower women and educate underprivileged children.',
+    description: 'Leads the foundation with a strong vision to empower women and provide education to underprivileged children.',
   },
   {
-    name: 'Rajeev Kumar',
-    role: 'Operations Head',
+    name: 'Jyoti Patel',
+    role: 'Manager',
     image: '/images/rajeev-kumar.jpg',
-    description: 'Ensures all campaigns are executed smoothly and effectively in target communities.',
+    description: 'Coordinates daily operations and ensures smooth execution of all programs and outreach campaigns within local communities.',
   },
   {
-    name: 'Priya Sharma',
-    role: 'Program Coordinator',
+    name: 'Ajit Yadav',
+    role: 'Co-partner',
     image: '/images/priya-sharma.jpg',
-    description: 'Manages educational sessions and hygiene programs across villages and slums.',
+    description: 'Plays a key role in organizing educational workshops and hygiene awareness drives in underserved areas.',
   },
   {
-    name: 'Ankit Verma',
-    role: 'Technical Lead',
+    name: 'Rekha Yadav',
+    role: 'Upadaykash',
     image: '/images/ankit-verma.jpg',
-    description: 'Drives digital outreach and uses technology to expand the foundation’s impact.',
+    description: 'Supports field-level activities and community engagement, ensuring effective communication between volunteers and beneficiaries.',
+  },
+  {
+    name: 'Sujata Patel',
+    role: 'Teacher',
+    image: '/images/ankit-verma.jpg',
+    description: 'Provides primary education to children, creating a supportive learning environment that encourages curiosity and growth.',
+  },
+  {
+    name: 'Shivani Yadav',
+    role: 'Teacher',
+    image: '/images/ankit-verma.jpg',
+    description: 'Specializes in teaching foundational subjects and mentoring children to build confidence and academic skills.',
+  },
+  {
+    name: 'Preeti Singh',
+    role: 'Social Media',
+    image: '/images/ankit-verma.jpg',
+    description: 'Manages the foundation’s social media presence, spreading awareness and highlighting community impact through digital platforms.',
   },
 ];
+
+
+
 
 const Team = () => {
   return (
