@@ -3,48 +3,50 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
+import male from '../../assets/male.jpeg';
+import female from '../../assets/female.jpeg';
 
 const teamMembers = [
   {
     name: 'Nitu Yadav',
     role: 'Founder & Director',
-    image: '/images/nitu-yadav.jpg',
+    image: female,
     description: 'Leads the foundation with a strong vision to empower women and provide education to underprivileged children.',
   },
   {
     name: 'Jyoti Patel',
     role: 'Manager',
-    image: '/images/rajeev-kumar.jpg',
+    image: female,
     description: 'Coordinates daily operations and ensures smooth execution of all programs and outreach campaigns within local communities.',
   },
   {
     name: 'Ajit Yadav',
     role: 'Co-partner',
-    image: '/images/priya-sharma.jpg',
+    image: male,
     description: 'Plays a key role in organizing educational workshops and hygiene awareness drives in underserved areas.',
   },
   {
     name: 'Rekha Yadav',
     role: 'Upadaykash',
-    image: '/images/ankit-verma.jpg',
+    image: female,
     description: 'Supports field-level activities and community engagement, ensuring effective communication between volunteers and beneficiaries.',
   },
   {
     name: 'Sujata Patel',
     role: 'Teacher',
-    image: '/images/ankit-verma.jpg',
+    image: female,
     description: 'Provides primary education to children, creating a supportive learning environment that encourages curiosity and growth.',
   },
   {
     name: 'Shivani Yadav',
     role: 'Teacher',
-    image: '/images/ankit-verma.jpg',
+    image: female,
     description: 'Specializes in teaching foundational subjects and mentoring children to build confidence and academic skills.',
   },
   {
     name: 'Preeti Singh',
     role: 'Social Media',
-    image: '/images/ankit-verma.jpg',
+    image: female,
     description: 'Manages the foundation’s social media presence, spreading awareness and highlighting community impact through digital platforms.',
   },
 ];
