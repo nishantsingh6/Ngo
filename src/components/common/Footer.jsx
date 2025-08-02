@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="text-sm text-gray-300 text-center md:text-right space-y-1">
           <p>Email: <a href="mailto: vwnjfoundation@gmail.com" className="hover:text-orange-400">vwnjfoundation@gmail.com</a></p>
-          <p>Phone: <a href="tel:+91 9354811924" className="hover:text-orange-400">+91 9354811924</a></p>
+          <p>Phone: <a href="tel:+91 8368880648" className="hover:text-orange-400">+91 8368880648</a></p>
           <p>© {new Date().getFullYear()} Vinaywings Navjeevan Foundation. All rights reserved.</p>
         </div>
       </div>

@@ -10,6 +10,7 @@ import student from '../../assets/student.jpg';
 import holi from '../../assets/holi.jpg';
 import gift from '../../assets/headerImg.jpg';
 import logo from '../../assets/logo.png';
+import dist from '../../assets/paddis.png';
 
 const images = [
   img,
@@ -17,7 +18,8 @@ const images = [
   gift,
   teching,
   student,
-  holi
+  holi,
+  dist
 ];
 
 const Herosection = () => {

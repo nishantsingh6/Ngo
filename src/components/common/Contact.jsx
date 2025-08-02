@@ -124,13 +124,13 @@ const Contact = () => {
               <p>
                 Vinaywings Navjeevan Foundation
                 <br />
-                Sector 34, Noida, Uttar Pradesh, India
+                Office No-211, 2nd Floor, Sharma Complex sector 51 above PNB Bank, Noida, Gautam Buddha Nagar, Uttar Pradesh
               </p>
             </div>
 
             <div className="bg-purple-50 p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-purple-800 mb-4">📞 Phone</h3>
-              <p>+91 9354811924</p>
+              <p>+91 8368880648</p>
             </div>
 
             <div className="bg-purple-50 p-6 rounded-lg shadow">
